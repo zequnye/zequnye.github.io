@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://LeoMoriaty.github.io/zequnye.github.io/sitemap.xml
+Sitemap: https://zequnye.github.io/sitemap.xml
