@@ -33,23 +33,34 @@ latest_posts:
 </div>
 
 <style>
-  .profile {
-    margin-top: -3.5rem !important;
-    margin-bottom: 0 !important;
+  .post-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    margin-bottom: 12px !important;
   }
-  .profile img {
-    max-height: 180px !important;
+  
+
+  .post-header .profile {
+    float: none !important;
+    margin: 0 0 0 20px !important;
     width: auto !important;
   }
-  .post-header {
-    margin-bottom: 4px !important;
+
+  .post-header .profile img {
+    max-height: 220px !important;
+    width: auto !important;
   }
+
+  .post-header .more-info {
+    font-size: 0.85rem !important;
+    line-height: 1.3 !important;
+    margin-top: 6px !important;
+    text-align: center !important;
+  }
+
   .post-content p, .post-content ul {
-    margin-bottom: 6px !important;
-  }
-  .social {
-    padding-top: 5px !important;
-    margin-top: 10px !important;
+    margin-bottom: 8px !important;
   }
 </style>
 
@@ -58,6 +69,12 @@ latest_posts:
     var titleEl = document.querySelector('.post-title');
     if (titleEl) {
       titleEl.innerHTML = 'Zequn <span class="font-weight-bold">YE</span>';
+    }
+
+    var headerEl = document.querySelector('.post-header');
+    var profileEl = document.querySelector('.profile');
+    if (headerEl && profileEl) {
+      headerEl.appendChild(profileEl);
     }
   });
 </script>
