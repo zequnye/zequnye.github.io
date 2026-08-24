@@ -8,10 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <p>Graduate School of Economics</p>
-    <p>Nagoya University</p>
-    <p>Nagoya, Japan</p>
+  more_info: 
 
 selected_papers: false
 social: true
@@ -36,27 +33,23 @@ latest_posts:
 </div>
 
 <style>
-  .profile img {
-    max-height: 280px !important;
-    width: auto !important;
-    object-fit: cover;
+  .profile {
+    margin-top: -3.5rem !important;
+    margin-bottom: 0 !important;
   }
-
-  .post-header {
-    margin-bottom: 15px !important;
-  }
-</style>
-
-<style>
   .profile img {
-    max-height: 240px !important;
+    max-height: 180px !important;
     width: auto !important;
   }
   .post-header {
-    margin-bottom: 8px !important;
+    margin-bottom: 4px !important;
   }
-  p {
-    margin-bottom: 8px !important;
+  .post-content p, .post-content ul {
+    margin-bottom: 6px !important;
+  }
+  .social {
+    padding-top: 5px !important;
+    margin-top: 10px !important;
   }
 </style>
 
