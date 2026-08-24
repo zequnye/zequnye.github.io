@@ -8,10 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <p>Graduate School of Economics</p>
-    <p>Nagoya University</p>
-    <p>Nagoya, Japan</p>
+  more_info:
 
 selected_papers: false
 social: true
@@ -23,12 +20,14 @@ latest_posts:
   enabled: false
 ---
 
-Welcome to my personal homepage. 
-
-I am a PhD Student in Graduate School of Economics, Nagoya University.
-
-My research interests primarily include: 
-- **Dynamic Macroeconomics** 
-- **Search-and-Matching Theory**
-- **Growth Theory**
-- **Spatial Economics**
+<div style="margin-top: -20px;">
+  <p>Welcome to my personal homepage.</p>
+  <p>I am a PhD Student in Graduate School of Economics, Nagoya University.</p>
+  <p>My research interests primarily include:</p>
+  <ul>
+    <li><strong>Dynamic Macroeconomics</strong></li>
+    <li><strong>Search-and-Matching Theory</strong></li>
+    <li><strong>Growth Theory</strong></li>
+    <li><strong>Spatial Economics</strong></li>
+  </ul>
+</div>
