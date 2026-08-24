@@ -3,7 +3,6 @@ layout: about
 title: <span style="font-weight:normal">Zequn</span> <span style="font-weight:bold">YE</span>
 permalink: /
 subtitle: PhD Student in Graduate School of Economics, Nagoya University
----
 
 profile:
   align: right
