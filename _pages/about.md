@@ -46,3 +46,25 @@ latest_posts:
     margin-bottom: 15px !important;
   }
 </style>
+
+<style>
+  .profile img {
+    max-height: 240px !important;
+    width: auto !important;
+  }
+  .post-header {
+    margin-bottom: 8px !important;
+  }
+  p {
+    margin-bottom: 8px !important;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var titleEl = document.querySelector('.post-title');
+    if (titleEl) {
+      titleEl.innerHTML = 'Zequn <span class="font-weight-bold">YE</span>';
+    }
+  });
+</script>
