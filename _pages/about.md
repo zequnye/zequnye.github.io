@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student in Graduate School of Economics, Nagoya University
+subtitle: 
 
 profile:
   align: right
