@@ -25,7 +25,7 @@ permalink: /
   </div>
 
   <div class="col-sm-5 text-center">
-    <img src="{{ 'assets/img/prof_pic.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="max-height: 260px; object-fit: cover; width: 100%; margin-bottom: 12px;" alt="prof_pic">
+    <img src="{{ 'assets/img/prof_pic.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="max-height: 250px; object-fit: cover; width: 100%; margin-bottom: 12px;" alt="prof_pic">
     <div style="font-size: 0.9rem; line-height: 1.4; color: #555;">
       <div>Graduate School of Economics</div>
       <div>Nagoya University</div>
