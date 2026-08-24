@@ -1,18 +1,11 @@
-/* Swap the font of First Name and Last Name */
-.navbar-brand {
-  .first-name {
-    font-weight: 300 !important;
-  }
-  .last-name {
-    font-weight: 700 !important;
-  }
-}
+.navbar-brand, .post-title, h1.title {
+  font-weight: 300 !important;
 
-.post-title {
-  .first-name {
+  span:first-child, b:first-child, strong:first-child {
     font-weight: 300 !important;
   }
-  .last-name {
+
+  span:last-child, b:last-child, strong:last-child {
     font-weight: 700 !important;
   }
 }
