@@ -84,7 +84,7 @@ latest_posts:
 
 <div class="custom-social">
   <!-- CV -->
-  <a href="{{ 'assets/pdf/cv.pdf' | relative_url }}" title="CV" class="cv-link" target="_blank">
+  <a href="{{ 'assets/pdf/CV20260825_Zequn YE.pdf' | relative_url }}" title="CV" class="cv-link" target="_blank">
     <i class="ai ai-cv"></i>
   </a>
 
