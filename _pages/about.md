@@ -53,49 +53,39 @@ latest_posts:
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 1.5rem !important;
-    margin-top: 20px !important;
+    gap: 1.8rem !important;
+    margin-top: 25px !important;
   }
 
   .custom-social a {
     color: var(--global-text-color) !important;
-    font-size: 2.2rem !important;
+    font-size: 2.8rem !important;
     text-decoration: none !important;
     transition: opacity 0.2s ease;
     display: inline-flex !important;
     align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
   }
 
   .custom-social a:hover {
     opacity: 0.7;
   }
 
+  .custom-social a.cv-link i {
+    font-size: 2.8rem !important;
+  }
+
   .custom-social a.orcid-link i {
     color: #a6ce39 !important;
-    font-size: 2.2rem !important;
-  }
-
-  .post-header {
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-  }
-  
-  .post article, .post-content {
-    margin-top: -10px !important;
-  }
-
-  .post-content p {
-    margin-bottom: 8px !important;
-  }
-  .post-content ul {
-    margin-bottom: 12px !important;
+    font-size: 2.8rem !important;
   }
 </style>
 
 <div class="custom-social">
   <!-- CV -->
-  <a href="{{ 'assets/pdf/cv.pdf' | relative_url }}" title="CV" target="_blank">
-    <i class="fa-solid fa-file-cv"></i>
+  <a href="{{ 'assets/pdf/cv.pdf' | relative_url }}" title="CV" class="cv-link" target="_blank">
+    <i class="ai ai-cv"></i>
   </a>
 
   <!-- Email -->
