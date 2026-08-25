@@ -34,7 +34,7 @@ latest_posts:
 
 <style>
   .post .profile {
-    margin-top: -2.6rem !important;
+    margin-top: -1.8rem !important;
     margin-bottom: 0px !important;
   }
 
@@ -58,13 +58,14 @@ latest_posts:
     text-decoration: none !important;
   }
 
-  .social a.orcid-icon i {
-    color: #a6ce39 !important;
-    font-size: 2.1rem !important;
+  .social a img {
+    height: 2.2rem !important;
+    width: auto !important;
+    vertical-align: middle !important;
+    margin: 0 !important;
   }
 
-  .social a[href*="custom_social"], 
-  .social img[src*="orcid"] {
+  .social .badge, .post-header .badge {
     display: none !important;
   }
 
@@ -95,33 +96,5 @@ latest_posts:
     if (titleEl) {
       titleEl.innerHTML = 'Zequn <span class="font-weight-bold">YE</span>';
     }
-
-    document.querySelectorAll('.social a').forEach(function(el) {
-      if (el.querySelector('img') || (el.getAttribute('href') && el.getAttribute('href').includes('custom'))) {
-        el.remove();
-      }
-    });
-
-    var contactIcons = document.querySelector('.social .contact-icons') || document.querySelector('.social');
-    if (contactIcons && !document.querySelector('.orcid-icon')) {
-      var orcidA = document.createElement('a');
-      orcidA.className = 'orcid-icon';
-      orcidA.href = 'https://orcid.org/0009-0002-7068-0366';
-      orcidA.target = '_blank';
-      orcidA.title = 'ORCID';
-      orcidA.innerHTML = '<i class="fa-brands fa-orcid"></i>';
-      contactIcons.appendChild(orcidA);
-    }
-
-    setTimeout(function() {
-      document.querySelectorAll('a[href*="cv"]').forEach(function(el) {
-        el.setAttribute('title', 'CV');
-        el.setAttribute('data-original-title', 'CV');
-      });
-      document.querySelectorAll('a[href*="scholar.google"]').forEach(function(el) {
-        el.setAttribute('title', 'Google Scholar');
-        el.setAttribute('data-original-title', 'Google Scholar');
-      });
-    }, 200);
   });
 </script>
