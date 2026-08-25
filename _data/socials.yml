@@ -13,7 +13,6 @@ scholar_userid: tHys6MUAAAAJ # your Google Scholar ID
   #title: Custom Social
   #url: https://www.alberteinstein.com/
 custom_social:
-  orcid:
     logo: https://orcid.org/assets/vectors/orcid.logo.icon.svg
     title: ORCID
     url: https://orcid.org/0009-0002-7068-0366
