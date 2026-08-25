@@ -33,13 +33,20 @@ latest_posts:
 </div>
 
 <style>
+  .social img {
+    height: 2rem !important;
+    width: auto !important;
+    vertical-align: middle !important;
+    margin-bottom: 0.3rem !important;
+  }
+
   .post-header {
     margin-bottom: 0px !important;
     padding-bottom: 0px !important;
   }
   
   .post article, .post-content {
-    margin-top: -15px !important;
+    margin-top: -10px !important;
   }
 
   .post .profile {
@@ -48,16 +55,9 @@ latest_posts:
   }
 
   .post .profile img {
-    max-height: 260px !important;
+    max-height: 230px !important;
     width: auto !important;
     object-fit: cover;
-  }
-
-  .post .profile .more-info {
-    font-size: 0.85rem !important;
-    line-height: 1.35 !important;
-    margin-top: 6px !important;
-    text-align: center !important;
   }
 
   .post-content p {
@@ -68,7 +68,7 @@ latest_posts:
   }
   .social {
     padding-top: 0px !important;
-    margin-top: 8px !important;
+    margin-top: 10px !important;
   }
 </style>
 
