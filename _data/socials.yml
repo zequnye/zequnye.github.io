@@ -5,10 +5,15 @@ cv_pdf: /assets/pdf/CV20260825_Zequn YE.pdf # path to your CV PDF file
 email: ye.zequn.h8@s.mail.nagoya-u.ac.jp # your email address
 #inspirehep_id: 1010907 # Inspire HEP author ID
 #rss_icon: false # comment this line to hide the RSS icon
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: tHys6MUAAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 #custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
   #logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
   #title: Custom Social
   #url: https://www.alberteinstein.com/
+custom_social:
+  orcid:
+    logo: https://orcid.org/assets/vectors/orcid.logo.icon.svg
+    title: ORCID
+    url: https://orcid.org/0009-0002-7068-0366
