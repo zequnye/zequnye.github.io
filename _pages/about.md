@@ -33,6 +33,17 @@ latest_posts:
 </div>
 
 <style>
+  .post .profile {
+    margin-top: -2.6rem !important;
+    margin-bottom: 0px !important;
+  }
+
+  .post .profile img {
+    max-height: 230px !important;
+    width: auto !important;
+    object-fit: cover;
+  }
+
   .social .contact-icons {
     display: inline-flex !important;
     align-items: center !important;
@@ -49,7 +60,12 @@ latest_posts:
 
   .social a.orcid-icon i {
     color: #a6ce39 !important;
-    font-size: 2.2rem !important;
+    font-size: 2.1rem !important;
+  }
+
+  .social a[href*="custom_social"], 
+  .social img[src*="orcid"] {
+    display: none !important;
   }
 
   .post-header {
@@ -59,17 +75,6 @@ latest_posts:
   
   .post article, .post-content {
     margin-top: -10px !important;
-  }
-
-  .post .profile {
-    margin-top: -3.2rem !important;
-    margin-bottom: 0px !important;
-  }
-
-  .post .profile img {
-    max-height: 230px !important;
-    width: auto !important;
-    object-fit: cover;
   }
 
   .post-content p {
@@ -90,6 +95,12 @@ latest_posts:
     if (titleEl) {
       titleEl.innerHTML = 'Zequn <span class="font-weight-bold">YE</span>';
     }
+
+    document.querySelectorAll('.social a').forEach(function(el) {
+      if (el.querySelector('img') || (el.getAttribute('href') && el.getAttribute('href').includes('custom'))) {
+        el.remove();
+      }
+    });
 
     var contactIcons = document.querySelector('.social .contact-icons') || document.querySelector('.social');
     if (contactIcons && !document.querySelector('.orcid-icon')) {
