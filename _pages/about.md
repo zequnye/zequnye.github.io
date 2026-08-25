@@ -33,11 +33,17 @@ latest_posts:
 </div>
 
 <style>
-  .social img {
+  .post-title .badge,
+  .post-header .badge,
+  .badge {
+    display: none !important;
+  }
+
+  .social img, .social svg {
     height: 2rem !important;
     width: auto !important;
     vertical-align: middle !important;
-    margin-bottom: 0.3rem !important;
+    margin-bottom: 0.2rem !important;
   }
 
   .post-header {
@@ -77,6 +83,19 @@ latest_posts:
     var titleEl = document.querySelector('.post-title');
     if (titleEl) {
       titleEl.innerHTML = 'Zequn <span class="font-weight-bold">YE</span>';
+    }
+
+    document.querySelectorAll('.post-title a, .post-header a').forEach(function(el) {
+      if (el.getAttribute('href') && el.getAttribute('href').includes('orcid')) {
+        el.remove();
+      }
+    });
+
+    var scholarIcon = document.querySelector('a[href*="scholar.google"]');
+    if (scholarIcon) {
+      scholarIcon.setAttribute('title', 'Google Scholar');
+      var iconChild = scholarIcon.querySelector('*');
+      if (iconChild) iconChild.setAttribute('title', 'Google Scholar');
     }
   });
 </script>
