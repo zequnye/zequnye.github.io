@@ -33,17 +33,11 @@ latest_posts:
 </div>
 
 <style>
-  .post-title .badge,
-  .post-header .badge,
-  .badge {
-    display: none !important;
-  }
-
   .social img, .social svg {
-    height: 2rem !important;
+    height: 1.8rem !important;
     width: auto !important;
-    vertical-align: middle !important;
-    margin-bottom: 0.2rem !important;
+    vertical-align: sub !important;
+    margin-bottom: 0px !important;
   }
 
   .post-header {
@@ -85,17 +79,28 @@ latest_posts:
       titleEl.innerHTML = 'Zequn <span class="font-weight-bold">YE</span>';
     }
 
-    document.querySelectorAll('.post-title a, .post-header a').forEach(function(el) {
-      if (el.getAttribute('href') && el.getAttribute('href').includes('orcid')) {
+    document.querySelectorAll('.post-title .badge, .post-header .badge, .post-title a, .post-header a').forEach(function(el) {
+      if (el.classList.contains('badge') || (el.getAttribute('href') && el.getAttribute('href').includes('orcid'))) {
         el.remove();
       }
     });
 
-    var scholarIcon = document.querySelector('a[href*="scholar.google"]');
-    if (scholarIcon) {
-      scholarIcon.setAttribute('title', 'Google Scholar');
-      var iconChild = scholarIcon.querySelector('*');
-      if (iconChild) iconChild.setAttribute('title', 'Google Scholar');
-    }
+    setTimeout(function() {
+      document.querySelectorAll('a[href*="cv"]').forEach(function(el) {
+        el.setAttribute('title', 'CV');
+        el.setAttribute('data-original-title', 'CV');
+        if (window.jQuery && $(el).data('bs.tooltip')) {
+          $(el).attr('data-original-title', 'CV').tooltip('update');
+        }
+      });
+
+      document.querySelectorAll('a[href*="scholar.google"]').forEach(function(el) {
+        el.setAttribute('title', 'Google Scholar');
+        el.setAttribute('data-original-title', 'Google Scholar');
+        if (window.jQuery && $(el).data('bs.tooltip')) {
+          $(el).attr('data-original-title', 'Google Scholar').tooltip('update');
+        }
+      });
+    }, 200);
   });
 </script>
