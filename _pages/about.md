@@ -60,8 +60,8 @@ latest_posts:
 
   .social a img {
     height: 2.2rem !important;
+    transform: translateY(-3px) !important; 
     width: auto !important;
-    vertical-align: middle !important;
     margin: 0 !important;
   }
 
