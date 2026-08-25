@@ -16,29 +16,35 @@
     object-fit: cover;
   }
 
-  .social .contact-icons {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 1.2rem !important;
-  }
-
-  .social a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-decoration: none !important;
-  }
-
-  .social a img {
-    height: 2.2rem !important;
-    transform: translateY(0px) !important; 
-    width: auto !important;
-    margin: 0 !important;
-  }
-
-  .social .badge, .post-header .badge {
+  .post-content .social,
+  body .social:not(.custom-social) {
     display: none !important;
+  }
+
+  .custom-social {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    margin-top: 20px !important;
+  }
+
+  .custom-social a {
+    color: var(--global-text-color) !important;
+    font-size: 2.2rem !important;
+    text-decoration: none !important;
+    transition: opacity 0.2s ease;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .custom-social a:hover {
+    opacity: 0.7;
+  }
+
+  .custom-social a.orcid-link i {
+    color: #a6ce39 !important;
+    font-size: 2.2rem !important;
   }
 
   .post-header {
@@ -56,11 +62,7 @@
   .post-content ul {
     margin-bottom: 12px !important;
   }
-  .social {
-    padding-top: 0px !important;
-    margin-top: 10px !important;
-  }
-</style> <script>
+</style> <div class="custom-social"> <a href="/assets/pdf/cv.pdf" title="CV" target="_blank"> <i class="fa-solid fa-file-cv"></i> </a> <a href="mailto:ye.zequn.h8@s.mail.nagoya-u.ac.jp" title="Email"> <i class="fa-solid fa-envelope"></i> </a> <a href="https://scholar.google.com/citations?user=tHys6MUAAAAJ" title="Google Scholar" target="_blank" rel="external nofollow noopener"> <i class="ai ai-google-scholar"></i> </a> <a href="https://orcid.org/0009-0002-7068-0366" title="ORCID" class="orcid-link" target="_blank" rel="external nofollow noopener"> <i class="fa-brands fa-orcid"></i> </a> </div> <script>
   document.addEventListener("DOMContentLoaded", function() {
     var titleEl = document.querySelector('.post-title');
     if (titleEl) {
